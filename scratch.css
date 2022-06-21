@@ -19,8 +19,8 @@ body {
 }
 
 #card {
-  width: 400px;
-  height: 450px;
+  width: 770px;
+  height: 480px;
   position: relative;
   user-select: none;
 }
@@ -31,7 +31,7 @@ canvas {
 }
 
 #card:active {
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 .pyro > .before, .pyro > .after {
@@ -221,4 +221,27 @@ canvas {
 
 .d-none {
   display: none;
+}
+
+.background-center {
+  background: linear-gradient(135deg, #f5e1da, #D4FEE6, #fef7e4, #dde7f0, #eee9ea );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0 50%;
+  }
 }
